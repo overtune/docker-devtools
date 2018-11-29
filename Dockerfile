@@ -7,6 +7,7 @@ RUN apk add --no-cache \
     tmux \
 	vim \
     git \
+	tig \
     zsh \
 	cmake \
 	python3-dev
@@ -28,4 +29,4 @@ RUN vim +PlugInstall +qall && \
 
 ENV TERM=xterm-256color
 ENV SHELL /bin/zsh
-CMD ["zsh", "--version"]
+CMD ["zsh"]
